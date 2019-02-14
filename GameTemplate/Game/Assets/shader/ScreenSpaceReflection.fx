@@ -19,6 +19,8 @@ cbuffer cb : register(b0){
 	float4x4 mViewProj;					//ビュープロジェクション行列。
 	float4x4 mViewProjInvLastFrame;		//1フレーム前のビュープロジェクション行列。
 	float4 cameraPosInWorld;	//ワールド座標系でのカメラの視点。
+	float4 renderTargetSize;	//レンダリングターゲットのサイズ。PSFinalでしか使用できません。
+								//ほかの箇所で使いたいなら、cpp側の対応が必要です。
 	float rayMarchStepRate;		//レイマーチのステップレート。。
 };
 

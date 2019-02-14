@@ -9,7 +9,6 @@ Game::Game()
 
 Game::~Game()
 {
-	DeleteGO(m_skinModelRender);
 }
 bool Game::Start()
 {
